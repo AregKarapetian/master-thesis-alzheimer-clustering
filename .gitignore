@@ -30,3 +30,14 @@ oasis_cross-sectional.xlsx
 
 # Jupyter checkpoint directories
 .ipynb_checkpoints/
+
+# Archive of pre-final files (large CSVs, superseded scripts)
+files_before_the_final_version_of_thesis/
+
+# All large PCA and HOG feature matrices
+**/pca_*.csv
+**/raw_hog_*.csv
+**/pca_all_images_merged.csv
+
+#Excel files
+notebooks/oasis_cross-sectional-5708aa0a98d82080.xlsx
