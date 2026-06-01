@@ -41,3 +41,6 @@ files_before_the_final_version_of_thesis/
 
 #Excel files
 notebooks/oasis_cross-sectional-5708aa0a98d82080.xlsx
+
+#PDf files
+*.pdf

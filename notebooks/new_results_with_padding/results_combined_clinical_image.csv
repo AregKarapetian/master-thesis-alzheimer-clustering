@@ -1,0 +1,15 @@
+image_type,metric,k,silhouette,ari,nmi,spread_pct_healthy
+all_merged,ggower,3,0.3272,0.016,0.0216,20.17
+all_merged,ggower,4,0.3014,0.0006,0.0156,19.94
+cor,ggower,3,0.3284,0.016,0.0216,20.2
+cor,ggower,4,0.3034,0.0006,0.0156,19.9
+gfc_sag,ggower,3,0.3284,0.016,0.0216,20.2
+gfc_sag,ggower,4,0.3034,0.0006,0.0156,19.9
+gfc_tra,ggower,3,0.3284,0.016,0.0216,20.2
+gfc_tra,ggower,4,0.3034,0.0006,0.0156,19.9
+masked_tra,ggower,3,0.3285,0.016,0.0216,20.2
+masked_tra,ggower,4,0.3035,0.0006,0.0156,19.9
+sbj_sag,ggower,3,0.328,0.016,0.0216,20.2
+sbj_sag,ggower,4,0.3028,0.0006,0.0156,19.9
+clinical_only,ggower,3,0.3286,0.016,0.0216,20.2
+clinical_only,ggower,4,0.3039,0.0006,0.0156,19.9
