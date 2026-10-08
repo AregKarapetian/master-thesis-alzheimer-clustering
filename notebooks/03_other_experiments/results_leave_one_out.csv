@@ -1,0 +1,13 @@
+experiment,images_used,n_images,k,silhouette,ari,nmi,spread_pct_healthy,delta_ari,delta_nmi
+full_5_images,"cor,gfc_sag,gfc_tra,masked_tra,sbj_sag",5,3,0.0183,-0.0103,0.0233,20.2,0.0,0.0
+full_5_images,"cor,gfc_sag,gfc_tra,masked_tra,sbj_sag",5,4,0.0106,-0.0056,0.024,18.9,0.0,0.0
+leave_out_cor,"gfc_sag,gfc_tra,masked_tra,sbj_sag",4,3,0.0224,-0.0084,0.0133,1.1,0.0019,-0.01
+leave_out_cor,"gfc_sag,gfc_tra,masked_tra,sbj_sag",4,4,0.0123,-0.0056,0.0085,2.9,0.0,-0.0155
+leave_out_gfc_sag,"cor,gfc_tra,masked_tra,sbj_sag",4,3,0.0216,-0.0147,0.0084,5.4,-0.0044,-0.0149
+leave_out_gfc_sag,"cor,gfc_tra,masked_tra,sbj_sag",4,4,0.0213,-0.0112,0.0366,34.7,-0.0056,0.0126
+leave_out_gfc_tra,"cor,gfc_sag,masked_tra,sbj_sag",4,3,0.0248,-0.0144,0.0186,15.6,-0.0041,-0.0047
+leave_out_gfc_tra,"cor,gfc_sag,masked_tra,sbj_sag",4,4,0.0183,-0.0163,0.0267,10.4,-0.0107,0.0027
+leave_out_masked_tra,"cor,gfc_sag,gfc_tra,sbj_sag",4,3,0.0239,-0.0039,0.0171,8.3,0.0064,-0.0062
+leave_out_masked_tra,"cor,gfc_sag,gfc_tra,sbj_sag",4,4,0.0211,-0.0029,0.0402,34.5,0.0027,0.0162
+leave_out_sbj_sag,"cor,gfc_sag,gfc_tra,masked_tra",4,3,0.0069,-0.0076,0.0243,20.2,0.0027,0.001
+leave_out_sbj_sag,"cor,gfc_sag,gfc_tra,masked_tra",4,4,0.0035,-0.0078,0.0322,24.6,-0.0022,0.0082

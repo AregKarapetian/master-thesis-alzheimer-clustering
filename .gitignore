@@ -1,5 +1,21 @@
-# Raw patient image folders (416 × 5 GIFs — too large, restricted by OASIS DUA)
+# Raw patient image folders (416 x 5 GIFs — too large, restricted by OASIS DUA)
 OAS1_*/
+
+# Raw GIF images (OASIS DUA — do not distribute)
+*.gif
+
+# Clinical data files — patient-level data, restricted by OASIS DUA (wildcarded so
+# this stays protected regardless of which folder it's moved into)
+**/oasis_cross-sectional*.xlsx
+**/oasis_combined*.csv
+
+# Raw HOG feature matrix — 150+ MB, exceeds GitHub's 100MB file limit regardless
+# of the OASIS DUA question
+**/raw_hog_features_per_image.csv
+notebooks/raw_hog_features.csv
+
+# Personal/administrative documents unrelated to the thesis — never belong in this repo
+OfertaC_*.pdf
 
 # Intermediate numpy feature files from single-image tests
 *.npy
@@ -16,17 +32,10 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Raw GIF images (OASIS DUA — do not distribute)
-*.gif
-
-# Large feature matrices — not for version control
-notebooks/raw_hog_features.csv
+# Large feature matrices from the superseded early pipeline — not for version control
 notebooks/pca_per_image_features.csv
 method_1_HOG_PCA/patient_hog_pca_features.csv
-
-# Source data files — patient data and combined feature+clinical tables
 method_1_HOG_PCA/oasis_combined.csv
-oasis_cross-sectional.xlsx
 
 # Jupyter checkpoint directories
 .ipynb_checkpoints/
@@ -34,13 +43,10 @@ oasis_cross-sectional.xlsx
 # Archive of pre-final files (large CSVs, superseded scripts)
 files_before_the_final_version_of_thesis/
 
-# All large PCA and HOG feature matrices
-**/pca_*.csv
-**/raw_hog_*.csv
-**/pca_all_images_merged.csv
-
-#Excel files
-notebooks/oasis_cross-sectional-5708aa0a98d82080.xlsx
-
-#PDf files
-*.pdf
+# NOTE: the derived per-image-type PCA feature CSVs (pca_cor.csv, pca_gfc_sag.csv,
+# pca_gfc_tra.csv, pca_masked_tra.csv, pca_sbj_sag.csv, pca_all_images_merged.csv,
+# pca_per_image_new_method_results.csv — all under notebooks/01_data_pipeline/) and
+# the compiled report PDFs (notebooks/02_final_results/thesis_full_report.pdf,
+# clustering_report.pdf) are DELIBERATELY NOT ignored: they're small (<3MB each),
+# contain no raw patient images or identifiable clinical values, and are needed for
+# the professor to run notebooks 02 onward and read the reports without recompiling.
