@@ -1,0 +1,9 @@
+distance family,configuration,feature space,silhouette
+Euclidean (k-means),C1-b,Clinical,0.257
+RelMS,I1,Images,0.02
+RelMS,M1,Images + clinical,0.022
+Robust G-Gower,C1,Clinical,0.14
+Robust G-Gower,C2,Clinical + CDR,0.112
+Robust G-Gower,I2,Images,0.023
+Robust G-Gower,M2,Images + clinical,0.021
+Robust G-Gower,M3,Images + clinical + CDR,0.02

@@ -1,0 +1,4 @@
+τ,PCs per type,"mean CV, image blocks","CV, clinical block","ARI(M2, C1)"
+0.5,55,0.134,0.382,0.221
+0.592,72,0.12,0.382,0.249
+0.9,163,0.081,0.382,0.209
